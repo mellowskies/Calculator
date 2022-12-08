@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
-            if (!Char.IsDigit(number) && char.IsDigit(number))
+            if (!Char.IsDigit(number) && !Char.IsSymbol(number))
             {
                 e.Handled = true;
             }
